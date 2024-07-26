@@ -1,0 +1,89 @@
+number 1: enumerate
+ایندکس عنصر یک مجموعه یا یک لیست رو برمیردونه
+Returns the element index of a set or a list
+Example
+
+In [3]: mylist = ['a','b','c','d','e']
+
+In [4]: for index,elm in enumerate(mylist):
+   ...:     print(index,elm)
+   ...: 
+0 a
+1 b
+2 c
+3 d
+4 e
+-------------------------------------------------------------------
+number 2: else block on loop
+یک حلقه رو چک میکنیم یا پیمایش میکنیم اگه حلقه کارش رو انجام نداد با else ب پایان میرسه
+When we check or navigate the loop, if the loop doesn't do its work, it ends with else
+exmaple
+
+In [6]: mylist = [1,2,3,4,5,6,7,8,9]
+
+In [7]: for i in mylist:
+   ...:     if i < 0:
+   ...:         print(f'{i} oh num is sub zero!!!')
+   ...:         break
+   ...: else:
+   ...:     print('your list is ok!')
+   ...: 
+your list is ok!
+-------------------------------------------------------------------
+number 3: list comperhensions
+مثل map عمل میکنه و ما میتونیم ب یک متغیر یک حلقه اختصاص بدیم
+It works like map and we can assign a loop to a variable
+
+exmaple
+
+In [8]: mylist = [1,2,3,4,5,6,7,8,9]
+
+In [9]: x2 = [x**2 for x in mylist]
+
+In [10]: x2
+Out[10]: [1, 4, 9, 16, 25, 36, 49, 64, 81]
+-------------------------------------------------------------------
+number 4:
+f string
+بهترین حالت تمیز نوشتن print
+The best way to write cleanly
+In [11]: name = "ali"
+
+In [12]: last_name = "zamani"
+
+In [13]: age = 24
+
+In [14]: print(f'my name is: {name} my last name {last_name} {age} years old')
+-------------------------------------------------------------------
+number 5:itertools product
+برای ضرب دو لیست در هم بدون ایجاد دو حلقه(البته این فقط یک نمونه هستش فیچر های زیادی داره)
+To multiply two lists together without creating two loops
+exmaple
+
+In [18]: mylist = [1,2,3,4,5,6,7,8,9]
+
+In [19]: import itertools
+
+In [20]: for a,b in itertools.product(mylist,mylist):
+    ...:     print(a*b)
+-------------------------------------------------------------------
+number 6:one liner if else
+یرای تمیز تر نوشتن if ب کار میره
+It is used to write if more cleanly
+exmpale
+
+In [21]: age = 24
+
+In [22]: print('old' if age > 50 else 'young')
+-------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
